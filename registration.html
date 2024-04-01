@@ -1,24 +1,63 @@
-<html>
-<title>Reg</title>
-<body>
-    <center>
-        <form action="2.html">
-<img src="C:\Users\Nandini\Downloads\griet.png" height="100" width="100">
-	<marquee><h1>Registration Page</h1></marquee>
-	<table>
-<tr><td>First Name:</td><td><input type="text" required></td></tr>
-<tr><td>Last Name: </td><td><input type="text" required></td></tr>
-<tr><td>Mobile: </td><td><input type="number" required></td></tr>
-<tr><td>Password: </td><td><input type="password" required></td></tr>
-<tr><td>Email: </td><td><input type="email" required></td></tr>
-<tr><td>Gender:</td><td>Male:<input type="radio" name="gen" value="male"> 
-                            Female:<input type="radio" name="gen" value="female"> </td></tr>
-<tr><td>File:</td><td><input type="file" required></td> </tr>
-<tr><td>DOB: </td><td><input type="date" required></td></tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+     
+      body
+      {
+          text-align:center;
+      }
+      .link-container a {
+    text-decoration: none;
+    color: #401ad8; 
+    margin-right: 40px; 
+  }
+  </style>
+</head>
+<body >
+   <div class="link-container">
+   <a href="index.html">HOME</a>
+   <a href="about.html">ABOUT US</a>
+   <a href="contact.html">CONTACT US</a>
+   <a href="form.html">REGISTRATION</a>
+   <a href="login.html">LOGIN</a>
+   <br>
+   <br>
+   </div>
+   
+    <marquee><h1 style="color:rgb(255, 0, 212)" heigth="200" width="300" >REGISTRATION FORM</h1></marquee>
+    <form action="submited.html"  method="POST">
+      <table align="center">
+        <tr>
+           <td><label for="firstname" >FIRSTNAME  </label></td>
+           <td><input type="text"  id="firstname" required></td>
+        </tr>
+        <tr>
+            <td><label for="lastname" >LASTTNAME  </label></td>
+            <td><input  type="text" id="lastname" required></td>
+         </tr>
+         <tr>
+            <td><label for="phone" >PHONE NUMBER  </label></td>
+            <td><input  type="number"  id="phone" required></td>
+         </tr>
+         <tr>
+            <td><label for="email" >EMAIL  </label></td>
+            <td><input type="email" id="email" required ></td>
+         </tr>
+         <tr>
+            <td><label for="password" >PASSWORD  </label></td>
+            <td><input  type="password" id="password" required></td>
+         </tr>
+         <tr>
+            <td><label for="dob" >DATE OF BIRTH  </label></td>
+            <td><input  type="date"  id="dob" required></td>
+         </tr>
+      </table> <br>
+      <input type="submit" value="submit">   
+    </form>
 
-<tr><td><input type="submit" value="submit"></td></tr>
-</table>
-</center>
-</form>
 </body>
 </html>
